@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5FA95F74-D43A-4797-A7FE-2AFAACE376D2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XALFA</RootNamespace>
+    <AssemblyName>XALFA</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Arlind Hajdari\Desktop\Aplikacioni\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>XALFA</ProductName>
+    <PublisherName>XALFA Inc.</PublisherName>
+    <SuiteName>XALFA</SuiteName>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>000D1DFB52FA800A703966BC1B36C6A815D59C7E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Orari_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>xalfa.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DGV Printer, Version=4.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\dgvprinter\DGV Printer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log.cs" />
+    <Compile Include="Login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="method.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCChangePassword.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCChangePassword.Designer.cs">
+      <DependentUpon>UCChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCDeleteDep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDeleteDep.Designer.cs">
+      <DependentUpon>UCDeleteDep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCDeleteFaculties.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDeleteFaculties.Designer.cs">
+      <DependentUpon>UCDeleteFaculties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCDeleteStaff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDeleteStaff.Designer.cs">
+      <DependentUpon>UCDeleteStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCDeleteSu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDeleteSu.Designer.cs">
+      <DependentUpon>UCDeleteSu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCDeleteTitles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDeleteTitles.Designer.cs">
+      <DependentUpon>UCDeleteTitles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCDepE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDepE.Designer.cs">
+      <DependentUpon>UCDepE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCDepR.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCDepR.Designer.cs">
+      <DependentUpon>UCDepR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCFacultiesE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCFacultiesE.Designer.cs">
+      <DependentUpon>UCFacultiesE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCFacultiesR.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCFacultiesR.Designer.cs">
+      <DependentUpon>UCFacultiesR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCOrari.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCOrari.Designer.cs">
+      <DependentUpon>UCOrari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCProfesori.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCProfesori.Designer.cs">
+      <DependentUpon>UCProfesori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCProfSubject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCProfSubject.Designer.cs">
+      <DependentUpon>UCProfSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSallaDete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSallaDete.Designer.cs">
+      <DependentUpon>UCSallaDete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSallaEditimi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSallaEditimi.Designer.cs">
+      <DependentUpon>UCSallaEditimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSallatRE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSallatRE.Designer.cs">
+      <DependentUpon>UCSallatRE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSallatTipi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSallatTipi.Designer.cs">
+      <DependentUpon>UCSallatTipi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCStaffSubjectsModify.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCStaffSubjectsModify.Designer.cs">
+      <DependentUpon>UCStaffSubjectsModify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSubjectE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSubjectE.Designer.cs">
+      <DependentUpon>UCSubjectE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSubjectR.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSubjectR.Designer.cs">
+      <DependentUpon>UCSubjectR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCTipiDelete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCTipiDelete.Designer.cs">
+      <DependentUpon>UCTipiDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCTipiEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCTipiEdit.Designer.cs">
+      <DependentUpon>UCTipiEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCTitleS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCTitleS.Designer.cs">
+      <DependentUpon>UCTitleS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCTitlesModifyS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCTitlesModifyS.Designer.cs">
+      <DependentUpon>UCTitlesModifyS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlEditimi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlEditimi.Designer.cs">
+      <DependentUpon>UserControlEditimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlRegjistrimi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlRegjistrimi.Designer.cs">
+      <DependentUpon>UserControlRegjistrimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WelcomePage.Designer.cs">
+      <DependentUpon>WelcomePage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCChangePassword.resx">
+      <DependentUpon>UCChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCDeleteDep.resx">
+      <DependentUpon>UCDeleteDep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCDeleteFaculties.resx">
+      <DependentUpon>UCDeleteFaculties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCDeleteStaff.resx">
+      <DependentUpon>UCDeleteStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCDeleteSu.resx">
+      <DependentUpon>UCDeleteSu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCDeleteTitles.resx">
+      <DependentUpon>UCDeleteTitles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCDepE.resx">
+      <DependentUpon>UCDepE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCDepR.resx">
+      <DependentUpon>UCDepR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCFacultiesE.resx">
+      <DependentUpon>UCFacultiesE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCFacultiesR.resx">
+      <DependentUpon>UCFacultiesR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCOrari.resx">
+      <DependentUpon>UCOrari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCProfesori.resx">
+      <DependentUpon>UCProfesori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCProfSubject.resx">
+      <DependentUpon>UCProfSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSallaDete.resx">
+      <DependentUpon>UCSallaDete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSallaEditimi.resx">
+      <DependentUpon>UCSallaEditimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSallatRE.resx">
+      <DependentUpon>UCSallatRE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSallatTipi.resx">
+      <DependentUpon>UCSallatTipi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCStaffSubjectsModify.resx">
+      <DependentUpon>UCStaffSubjectsModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSubjectE.resx">
+      <DependentUpon>UCSubjectE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSubjectR.resx">
+      <DependentUpon>UCSubjectR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCTipiDelete.resx">
+      <DependentUpon>UCTipiDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCTipiEdit.resx">
+      <DependentUpon>UCTipiEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCTitleS.resx">
+      <DependentUpon>UCTitleS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCTitlesModifyS.resx">
+      <DependentUpon>UCTitlesModifyS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlEditimi.resx">
+      <DependentUpon>UserControlEditimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlRegjistrimi.resx">
+      <DependentUpon>UserControlRegjistrimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelcomePage.resx">
+      <DependentUpon>WelcomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Orari_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\LoginRed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.Express.10.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 R2 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Orari.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Orari_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Orari.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\teacher.bmp" />
+    <Content Include="xalfa.ico" />
+    <Content Include="teacher.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="student.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="admin.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
